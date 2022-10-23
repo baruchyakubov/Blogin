@@ -115,6 +115,9 @@ p , .continue-reading{
 
 
 /* header */
+.menu{
+    display: none;
+}
 .logo{
     font-family: Eurofurence;
 }
@@ -132,6 +135,7 @@ p , .continue-reading{
 
 .navigation-menu{
     height: 100%;
+    background-color: var(--clr1);
 }
 
 .clean-list{
@@ -209,7 +213,9 @@ span{
 .posts-navigation{
     border-top: 1px solid var(--clr10); 
 }
-
+/* .posts{
+    border: 1px solid var(--clr10); 
+} */
 .continue-reading{
     margin-top: auto;
 }
@@ -265,6 +271,9 @@ footer>*:not(social-profiles){
 }
 
 @media (max-width: 785px){
+    .menu{
+        display: block;
+    }
     .post1{
         flex-direction: column;
     }
@@ -274,6 +283,24 @@ footer>*:not(social-profiles){
     }
     .blog>*:not(.header , .footer){
         max-width: 600px;
+    }
+
+    .navigation-menu{
+        position: absolute;
+        top: 14.13%;
+        left: 100%;
+        height: 75vh;
+        transition: translate , ease-in 0.5s;
+    }
+    .open{
+        transform: translate(-100%);
+    }
+    .navigation-menu ul{
+        flex-direction: column;
+        width: 40vw;
+    }
+    .navigation-menu .clean-list li{
+        width: 100%;
     }
 }
 

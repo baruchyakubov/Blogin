@@ -11,8 +11,9 @@
     <header class="header blog">
         <div class="inside-header flex space-between align-center">
             <h1 class="logo">Blogin<span>.</span></h1>
+            <button onclick="ToogleMenu()" class="menu"><img src="img/menu.png" alt=""></button>
             <nav class="navigation-menu">
-                <ul class="clean-list">
+                <ul class="clean-list flex">
                     <li><a class="flex align-center justify-center" href="#">journal</a></li>
                     <li><a class="flex align-center justify-center" href="#">about</a></li>
                     <li><a class="flex align-center justify-center" href="#">work</a></li>
@@ -82,5 +83,13 @@
             </li>
         </ul>
     </footer>
+    <script>
+        function ToogleMenu(){
+            if(document.querySelector('.navigation-menu').classList.contains('open')){
+                document.querySelector('.navigation-menu').classList.remove('open')
+            }else document.querySelector('.navigation-menu').classList.add('open')
+        }
+    </script>
 </body>
 </html>
+
