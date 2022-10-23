@@ -31,6 +31,9 @@
     box-sizing: border-box;
     font-family: Lato;
 }
+html{
+    overflow: hidden;
+}
 
 body{
     margin: 0px;
