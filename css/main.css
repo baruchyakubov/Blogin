@@ -254,20 +254,32 @@ footer>*:not(social-profiles){
     transform: translate(-50% , -50%);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1035px){
     .navigation-menu .clean-list li a {
         height: 100px;
         width: 100px;
     }
+    .blog>*:not(.header , .footer){
+        max-width: 740px;
+    }
 }
 
-@media (max-width: 740px){
+@media (max-width: 785px){
     .post1{
         flex-direction: column;
     }
     .continue-reading{
         margin-left: auto;
         margin-right: auto;
+    }
+    .blog>*:not(.header , .footer){
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 656px){
+    .blog>*:not(.header , .footer){
+        max-width: 300px;
     }
 }
 
