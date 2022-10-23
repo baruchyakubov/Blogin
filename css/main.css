@@ -32,7 +32,7 @@
     font-family: Lato;
 }
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body{
