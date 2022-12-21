@@ -320,6 +320,9 @@ footer>*:not(social-profiles){
 }
 
 @media (max-width: 785px){
+      .details{
+        margin-top: 20px;
+    }
     .menu{
         display: block;
     }
