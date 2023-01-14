@@ -10,94 +10,102 @@
 </head>
 
 <body>
-    <div class="main-screen" onclick="ToogleMenu()"></div>
+    <div class="main-screen" onclick="closeMenu()"></div>
     <div class="screen"></div>
     <div class="blog">
-    <header class="header blog">
-        <div class="inside-header flex space-between align-center">
-            <h1 class="logo">Blogin<span>.</span></h1>
-            <button onclick="ToogleMenu()" class="menu"><img src="img/menu.png" alt=""></button>
-            <nav class="navigation-menu">
-                <ul class="clean-list flex">
-                    <li><a class="flex align-center justify-center" href="#">journal</a></li>
-                    <li><a class="flex align-center justify-center" href="#">about</a></li>
-                    <li><a class="flex align-center justify-center" href="#">work</a></li>
-                    <li><a class="flex align-center justify-center" href="#">contact</a></li>
+        <header class="header blog">
+            <div class="inside-header flex space-between align-center">
+                <h1 class="logo">Blogin<span>.</span></h1>
+                <button onclick="openMenu()" class="menu"><img src="img/menu.png" alt=""></button>
+                <nav class="navigation-menu">
+                    <ul class="clean-list flex">
+                        <li><a class="flex align-center justify-center" href="#">journal</a></li>
+                        <li><a class="flex align-center justify-center" href="#">about</a></li>
+                        <li><a class="flex align-center justify-center" href="#">work</a></li>
+                        <li><a class="flex align-center justify-center" href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="posts">
+            <div class="post1 flex">
+                <img class="img" src="img/layer 1.png" alt="">
+                <div class="details flex">
+                    <h2 class="title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                    <button onclick="ShowModal()" class="continue-reading">Continue Reading <span
+                            class="arrow">→</span></button>
+                </div>
+
+            </div>
+            <div class="post1 flex">
+                <img class="img" src="img/layer 2.png" alt="">
+                <div class="details flex">
+                    <h2 class="title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                    <button onclick="ShowModal()" class="continue-reading">Continue Reading <span
+                            class="arrow">→</span></button>
+                </div>
+            </div>
+            <div class="post1 flex">
+                <img class="img" src="img/layer 3.png" alt="">
+                <div class="details flex">
+                    <h2 class="title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                    <button onclick="ShowModal()" class="continue-reading">Continue Reading <span
+                            class="arrow">→</span></button>
+                </div>
+            </div>
+            <nav class="posts-navigation">
+                <ul class="clean-list flex space-between">
+                    <li class="previous">
+                        <p>← PREVIOUS</p>
+                    </li>
+                    <li class="next">
+                        <p>NEXT →</p>
+                    </li>
                 </ul>
             </nav>
-        </div>
-    </header>
-    <main class="posts">
-        <div class="post1 flex">
-            <img class="img" src="img/layer 1.png" alt="">
-            <div class="details flex">
-                <h2 class="title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
-                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur...</p>
-                <button onclick="ShowModal()" class="continue-reading">Continue Reading <span
-                        class="arrow">→</span></button>
-            </div>
-
-        </div>
-        <div class="post1 flex">
-            <img class="img" src="img/layer 2.png" alt="">
-            <div class="details flex">
-                <h2 class="title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
-                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur...</p>
-                <button onclick="ShowModal()" class="continue-reading">Continue Reading <span
-                        class="arrow">→</span></button>
-            </div>
-        </div>
-        <div class="post1 flex">
-            <img class="img" src="img/layer 3.png" alt="">
-            <div class="details flex">
-                <h2 class="title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
-                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur...</p>
-                <button onclick="ShowModal()" class="continue-reading">Continue Reading <span
-                        class="arrow">→</span></button>
-            </div>
-        </div>
-        <nav class="posts-navigation">
-            <ul class="clean-list flex space-between">
-                <li class="previous">
-                    <p>← PREVIOUS</p>
+        </main>
+        <footer class="footer flex direction-col align-center">
+            <h1 class="logo black">blogin<span>.</span></h1>
+            <p>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
+            <ul class="social-profiles clean-list">
+                <li class="facebook">
+                    <a href="https://www.facebook.com/">
+                        <div class="logo-box"><img class="F" src="img/F.png" alt=""></div>
+                    </a>
                 </li>
-                <li class="next">
-                    <p>NEXT →</p>
+                <li class="twitter">
+                    <a href="https://twitter.com/">
+                        <div class="logo-box"><img class="L" src="img/L.png" alt=""></div>
+                    </a>
+                </li>
+                <li class="be">
+                    <a href="#">
+                        <div class="logo-box"> <img src="img/E.png" alt=""></div>
+                    </a>
+                </li>
+                <li class="app">
+                    <a href="#">
+                        <div class="logo-box"> <img src="img/D.png" alt=""></div>
+                    </a>
                 </li>
             </ul>
-        </nav>
-    </main>
-    <footer class="footer flex direction-col align-center">
-        <h1 class="logo black">blogin<span>.</span></h1>
-        <p>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
-        <ul class="social-profiles clean-list">
-            <li class="facebook">
-                <a href="https://www.facebook.com/"><div class="logo-box"><img class="F" src="img/F.png" alt=""></div></a>
-            </li>
-            <li class="twitter">
-                <a href="https://twitter.com/"><div class="logo-box"><img class="L" src="img/L.png" alt=""></div></a>
-            </li>
-            <li class="be">
-                <a href="#"><div class="logo-box"> <img src="img/E.png" alt=""></div></a>
-            </li>
-            <li class="app">
-                <a href="#"><div class="logo-box"> <img src="img/D.png" alt=""></div></a>
-            </li>
-        </ul>
-    </footer>
-</div>
+        </footer>
+    </div>
     <section class="modal">
         <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
@@ -106,26 +114,27 @@
         <button onclick="closeModal()" class="close-btn">x</button>
     </section>
     <script>
-        function ToogleMenu() {
-            if (document.querySelector('.navigation-menu').classList.contains('open')) {
-                document.querySelector('.navigation-menu').classList.remove('open')
-                document.querySelector('.main-screen').classList.remove('open')
-            } else {
-                document.querySelector('.navigation-menu').classList.add('open')
-                document.querySelector('.main-screen').classList.add('open')
+        function closeMenu() {
+            if(!document.querySelector('.navigation-menu').classList.contains('open')){
+                closeModal() 
+                return
             }
+            document.querySelector('.navigation-menu').classList.remove('open')
+            document.querySelector('.main-screen').classList.remove('open')
+        }
+        function openMenu() {
+            document.querySelector('.navigation-menu').classList.add('open')
+            document.querySelector('.main-screen').classList.add('open')
         }
 
         function ShowModal() {
             document.querySelector('.modal').classList.add('show-modal')
-            document.querySelector('body').classList.add('opacity')
-            document.querySelector('.screen').style.display = 'block'
-            }
-            
-            function closeModal() {
-                document.querySelector('.modal').classList.remove('show-modal')
-                document.querySelector('body').classList.remove('opacity')
-                document.querySelector('.screen').style.display = 'none'
+            document.querySelector('.main-screen').classList.add('open')
+        }
+
+        function closeModal() {
+            document.querySelector('.modal').classList.remove('show-modal')
+            document.querySelector('.main-screen').classList.remove('open')
         }
     </script>
 </body>

@@ -38,21 +38,6 @@ html{
 body{
     margin: 0px;
 }
-/* .opacity>*:not(.modal , .navigation-menu){
-    opacity: 0.5;
-} */
-
-.screen {
-    position: fixed;
-    background-color: #1d1d1d;
-    opacity: 0.5;
-    inset: 0;
-    display: none;
-    /* top: 0;
-    left:0;
-    width: 100%;
-    height: 100%; */
-}
 
 .img{
     width: 100%;
@@ -125,6 +110,7 @@ p , .continue-reading{
     max-width: 980px;
     margin-left: auto;
     margin-right: auto;
+    padding-inline: 20px;
 }
 
 
@@ -234,9 +220,7 @@ span{
 .posts-navigation{
     border-top: 1px solid var(--clr10); 
 }
-/* .posts{
-    border: 1px solid var(--clr10); 
-} */
+
 .continue-reading{
     margin-top: auto;
 }
@@ -295,13 +279,16 @@ footer>*:not(social-profiles){
     width: 50vw;
     background-color: #e5e5e5;
     padding: 20px;
-    display: none;
+    pointer-events: none;
+    transition: 0.4s ease-out;
+    opacity: 0;
     overflow-y: auto;
     z-index: 30;
 }
 
 .show-modal{
-    display: block; 
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .close-btn{
@@ -373,6 +360,9 @@ footer>*:not(social-profiles){
     }
     .navigation-menu .clean-list li{
         width: 40vh;
+    }
+    .details{
+        margin-top: 30px;
     }
 }
 
