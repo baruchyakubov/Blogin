@@ -310,6 +310,12 @@ footer>*:not(social-profiles){
     cursor: pointer;
 }
 
+.main-screen.open{
+    display: block;
+    opacity: 0.5;
+    pointer-events: auto;
+}
+
 @media (max-width: 1035px){
     .navigation-menu .clean-list li a {
         height: 100px;
@@ -335,9 +341,6 @@ footer>*:not(social-profiles){
         max-width: 600px;
     }
 
-
-
-
     .navigation-menu{
         position: fixed;
         z-index: 20;
@@ -349,11 +352,7 @@ footer>*:not(social-profiles){
     .navigation-menu.open{
         transform: translate(-100%);
     }
-    .main-screen.open{
-        display: block;
-        opacity: 0.5;
-        pointer-events: auto;
-    }
+  
     .navigation-menu ul{
         flex-direction: column;
         width: fit-content;
