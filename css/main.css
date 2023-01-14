@@ -262,6 +262,7 @@ footer>*:not(social-profiles){
 }
 .social-profiles li .logo-box img{
     position: relative;
+    z-index: 10;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
@@ -298,6 +299,7 @@ footer>*:not(social-profiles){
 
 .main-screen{
     position: fixed;
+    z-index: 20;
     height: 100vh;
     width: 100vw;
     background-color: #000;
