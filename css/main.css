@@ -175,10 +175,14 @@ p , .continue-reading{
     justify-content: center;
     height: 100%;
     width: 132px;
+    cursor: pointer;
 }
 
 .navigation-menu .clean-list li:hover{
     border-bottom: 4px var(--clr4) solid;
+    color: var(--clr4);
+}
+.navigation-menu .clean-list li:hover a{
     color: var(--clr4);
 }
 
@@ -190,9 +194,6 @@ p , .continue-reading{
     width: 130px;
 }
 
-.navigation-menu .clean-list li a:hover{
-    color: var(--clr4);
-}
 
 .logo{
     color: var(--clr2);
@@ -347,6 +348,9 @@ footer>*:not(social-profiles){
         max-width: 600px;
     }
 
+
+
+
     .navigation-menu{
         position: fixed;
         z-index: 20;
@@ -365,10 +369,10 @@ footer>*:not(social-profiles){
     }
     .navigation-menu ul{
         flex-direction: column;
-        width: 40vw;
+        width: fit-content;
     }
     .navigation-menu .clean-list li{
-        width: 100%;
+        width: 40vh;
     }
 }
 
